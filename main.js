@@ -9,6 +9,7 @@ var pmsAddress;
 var pmsToken;
 
 var movie;
+var letterboxdLink;
 
 function init() {
 
@@ -20,7 +21,7 @@ function init() {
 	console.log("[Letterplex] Server data OK");
 
 	// Init the movie data
-	var movie = getMovie();
+	movie = getMovie();
 	var req = new XMLHttpRequest();
 	req.open('GET', 'http://' + pmsAddress + "/library/metadata/" + movie.ID + "?X-Plex-Token=" + pmsToken, false); 
 	req.send(null);
@@ -66,6 +67,10 @@ function getMovie(){
 	var movie_id = url.split('%2Flibrary%2Fmetadata%2F');
 	movie_id = parseInt(movie_id[1]);
 	return new Movie(movie_id);
+}
+
+function constructLink() {
+	letterboxdLink = 'https://letterboxd.com/search/' + movie.metadata.ID + "/";
 }
 
 function getServer(){

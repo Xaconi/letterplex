@@ -13,6 +13,7 @@
 	      	"js": [
 	      		"classes/letterboxd.js",
 	      		"classes/movie.js",
+	      		"classes/metadata.js",
 	      		"resources/functions.js",
 	      		"main.js"
 	      	],
