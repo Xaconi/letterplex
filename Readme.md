@@ -1,5 +1,7 @@
+#### Letterplex ####
+
 Letterboxd && Plex Integration (Chrome Extension)
-With love by @Xaconi
+Made with ❤ by [@Xaconi](https://twitter.com/xaconi?lang=es)
 
 - Goals
 
@@ -9,10 +11,8 @@ With love by @Xaconi
 	* Add Letterboxd score from the Plex web panel (4)
 
 - How to do it
-
-(1)
-
-	* Get the Plex Token (PK)
-	* Make the call to the Plex Server and get the Movie GUID (MGUID)
-	* Construct the Letterbox Link
-	* Place it on the Plex Web Panel
+	* (1)
+		> Get the Plex Token (PK)
+		> Make the call to the Plex Server and get the Movie GUID (MGUID)
+		> Construct the Letterbox Link
+		> Place it on the Plex Web Panel
